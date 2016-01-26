@@ -36,7 +36,7 @@
     :defer t
     :mode ("\\.v\\'" . coq-mode)
     :load-path
-    "/usr/local/Cellar/coq/4.2/share/emacs/site-lisp/coq/generic")
+    "/usr/local/Cellar/proof-general/4.2/share/emacs/site-lisp/proof-general/generic")
   :config (progn
             (evil-leader/set-key-for-mode 'coq-mode
               "mn" 'proof-assert-next-command-interactive))
