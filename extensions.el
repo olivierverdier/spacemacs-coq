@@ -38,6 +38,9 @@
     :load-path
     "/usr/local/Cellar/proof-general/4.2/share/emacs/site-lisp/proof-general/generic")
   :config (progn
-            (evil-leader/set-key-for-mode 'coq-mode
-              "n" 'proof-assert-next-command-interactive))
+            (spacemacs/set-leader-keys-for-major-mode 'coq-mode
+              "]" 'proof-assert-next-command-interactive
+              "[" 'proof-undo-last-successful-command
+              "." 'proof-goto-point
+              ))
   )
