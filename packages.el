@@ -14,6 +14,7 @@
 (setq coq-packages
     '(
       company-coq
+      (proof-general :location local)
       ))
 
 ;; List of packages to exclude.
@@ -34,3 +35,18 @@
     :defer t
     :config
     (add-hook 'coq-mode-hook #'company-coq-initialize)))
+
+(defun coq/init-proof-general ()
+  "Initialize Proof General"
+  (use-package proof-site
+    :defer t
+    :mode ("\\.v\\'" . coq-mode)
+    :load-path
+    "/usr/local/Cellar/proof-general/4.2/share/emacs/site-lisp/proof-general/generic")
+  :config (progn
+            (spacemacs/set-leader-keys-for-major-mode 'coq-mode
+              "]" 'proof-assert-next-command-interactive
+              "[" 'proof-undo-last-successful-command
+              "." 'proof-goto-point
+              ))
+  )
