@@ -34,7 +34,7 @@
   (use-package company-coq
     :defer t
     :config
-    (add-hook 'coq-mode-hook #'company-coq-initialize)))
+    (add-hook 'coq-mode-hook #'company-coq-mode)))
 
 (defun coq/init-proof-general ()
   "Initialize Proof General"
