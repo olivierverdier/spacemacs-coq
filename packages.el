@@ -32,8 +32,9 @@
 
 (defun coq/init-company-coq ()
   (use-package company-coq
+    :mode ("\\.v\\'" . coq-mode)
     :defer t
-    :config
+    :init
     (add-hook 'coq-mode-hook #'company-coq-mode)))
 
 (defun coq/init-proof-general ()
