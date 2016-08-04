@@ -39,9 +39,9 @@
 
 (defun coq/init-proof-general ()
   "Initialize Proof General."
-  ;; Setup from Proof General README, using a Homebrew path. Proof General
+  ;; Setup from Proof General README, using a path from the configuration. Proof General
   ;; lazily loads from proof-site, so there's no need to use-package it.
-  (load "/usr/local/share/emacs/site-lisp/proof-general/generic/proof-site")
+  (load proof-general-path)
   (spacemacs/set-leader-keys-for-major-mode 'coq-mode
     "]" 'proof-assert-next-command-interactive
     "[" 'proof-undo-last-successful-command
