@@ -11,4 +11,6 @@
 
 (defvar proof-general-path "/usr/local/share/emacs/site-lisp/proof-general/generic/proof-site"
   "The path to proof general")
+(defvar ssreflect-path "/usr/local/share/mathcomp-1.6/mathcomp/ssreflect/pg-ssr"
+  "The path to ssreflect")
 

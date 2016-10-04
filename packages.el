@@ -42,6 +42,7 @@
   ;; Setup from Proof General README, using a path from the configuration. Proof General
   ;; lazily loads from proof-site, so there's no need to use-package it.
   (load proof-general-path)
+  (load ssreflect-path)
   (spacemacs/set-leader-keys-for-major-mode 'coq-mode
     "]" 'proof-assert-next-command-interactive
     "[" 'proof-undo-last-successful-command
