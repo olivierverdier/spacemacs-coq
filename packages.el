@@ -68,4 +68,6 @@
   (setup-coq-keys)
     ;;; Hybrid mode by default
   (setq-default proof-three-window-mode-policy 'hybrid)
+  ;; no splash screen
+  (setq proof-splash-seen t)
   )
