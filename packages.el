@@ -43,6 +43,12 @@
   ;; lazily loads from proof-site, so there's no need to use-package it.
   (load proof-general-path)
   (spacemacs/set-leader-keys-for-major-mode 'coq-mode
-    "]" 'proof-assert-next-command-interactive
-    "[" 'proof-undo-last-successful-command
-    "." 'proof-goto-point))
+    "n" 'proof-assert-next-command-interactive
+    "u" 'proof-undo-last-successful-command
+    "h" 'company-coq-doc
+    "l" 'proof-layout-windows
+    "p" 'proof-prf
+    "x" 'proof-shell-exit
+    (or dotspacemacs-major-mode-leader-key ",") 'proof-goto-point
+    )
+  )
