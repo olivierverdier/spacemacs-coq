@@ -66,4 +66,6 @@
     (or dotspacemacs-major-mode-leader-key ",") 'proof-goto-point
     )
   (setup-coq-keys)
+    ;;; Hybrid mode by default
+  (setq-default proof-three-window-mode-policy 'hybrid)
   )
