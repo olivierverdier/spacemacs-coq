@@ -70,4 +70,10 @@
   (setq-default proof-three-window-mode-policy 'hybrid)
   ;; no splash screen
   (setq proof-splash-seen t)
+   ;; Better colour scheme which work for me
+  (custom-set-faces
+   '(proof-eager-annotation-face ((t (:background "medium blue"))))
+   '(proof-error-face ((t (:background "dark red"))))
+   '(proof-warning-face ((t (:background "indianred3"))))
+   )
   )
