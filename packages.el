@@ -37,6 +37,20 @@
     :init
     (add-hook 'coq-mode-hook #'company-coq-mode)))
 
+(defun setup-coq-keys ()
+          (evil-define-key 'normal coq-mode-map
+            (kbd "M-l") 'proof-goto-point
+            (kbd "M-k") 'proof-undo-last-successful-command
+            (kbd "M-j") 'proof-assert-next-command-interactive
+            )
+          (evil-define-key 'insert coq-mode-map
+            (kbd "M-l") 'proof-goto-point
+            (kbd "M-k") 'proof-undo-last-successful-command
+            (kbd "M-j") 'proof-assert-next-command-interactive
+            )
+          )
+
+
 (defun coq/init-proof-general ()
   "Initialize Proof General."
   ;; Setup from Proof General README, using a path from the configuration. Proof General
@@ -51,4 +65,5 @@
     "x" 'proof-shell-exit
     (or dotspacemacs-major-mode-leader-key ",") 'proof-goto-point
     )
+  (setup-coq-keys)
   )
