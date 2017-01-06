@@ -32,7 +32,7 @@ file.
 | ~SPC m p~                                    | Print                  |
 | ~SPC m ;~                                    | insert goal as comment |
 | ~SPC m o~                                    | occur                  |
-| ~M-k~                                        | previous               |
-| ~M-j~                                        | next                   |
+| ~M-k~                                        | go to previous point   |
+| ~M-j~                                        | go to next point       |
 | ~M-l~                                        | go to this point       |
 
