@@ -7,8 +7,8 @@ This layer adds support for the [[https://proofgeneral.github.io/][Proof General
 
 * Install
 ** Layer
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =coq= to the existing =dotspacemacs-configuration-layers= list in this
+To use this configuration layer, clone this repository into =~/emacs.d/private/=.
+You will need to add =coq= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
 ** Dependencies
