@@ -60,9 +60,14 @@
     "n" 'proof-assert-next-command-interactive
     "u" 'proof-undo-last-successful-command
     "h" 'company-coq-doc
-    "l" 'proof-layout-windows
-    "p" 'proof-prf
+    "ll" 'proof-layout-windows
+    "lp" 'proof-prf
     "x" 'proof-shell-exit
+    "s" 'proof-find-theorems
+    "?" 'coq-Check
+    "p" 'coq-Print
+    ";" 'pg-insert-last-output-as-comment
+    "o" 'company-coq-occur
     (or dotspacemacs-major-mode-leader-key ",") 'proof-goto-point
     )
   (setup-coq-keys)
