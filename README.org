@@ -1,0 +1,38 @@
+
+* Description
+This layer adds support for the [[https://proofgeneral.github.io/][Proof General]] interface to the [[https://coq.inria.fr/][Coq Proof Assistant]].
+
+** Features
+- Loads the [[https://github.com/cpitclaudel/company-coq][company-coq]] extension
+
+* Install
+** Layer
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =coq= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+** Dependencies
+- Coq (of course)
+- Proof general
+
+* Keybindings
+
+
+| Key                                          | Description            |
+|----------------------------------------------+------------------------|
+| ~SPC m <dotspacemacs-major-mode-leader-key>~ | go to this point       |
+| ~SPC m n~                                    | go to next point       |
+| ~SPC m u~                                    | go to previous point   |
+| ~SPC m h~                                    | help at point          |
+| ~SPC m x~                                    | quit Coq               |
+| ~SPC m ll~                                   | Layout: reset          |
+| ~SPC m lp~                                   | Layout: proof          |
+| ~SPC m s~                                    | Search a theorem       |
+| ~SPC m ?~                                    | Check                  |
+| ~SPC m p~                                    | Print                  |
+| ~SPC m ;~                                    | insert goal as comment |
+| ~SPC m o~                                    | occur                  |
+| ~M-k~                                        | previous               |
+| ~M-j~                                        | next                   |
+| ~M-l~                                        | go to this point       |
+
