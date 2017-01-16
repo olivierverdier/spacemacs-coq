@@ -33,6 +33,7 @@
 (defun coq/init-company-coq ()
   "Enter company-coq-mode upon entering coq-mode."
   (use-package company-coq
+    :mode ("\\.v\\'" . coq-mode)
     :defer t
     :init
     (add-hook 'coq-mode-hook #'company-coq-mode)))
