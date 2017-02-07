@@ -59,6 +59,7 @@
   (spacemacs/set-leader-keys-for-major-mode 'coq-mode
     "n" 'proof-assert-next-command-interactive
     "u" 'proof-undo-last-successful-command
+    "i" 'company-coq-toggle-definition-overlay
     "h" 'company-coq-doc
     "ll" 'proof-layout-windows
     "lp" 'proof-prf
