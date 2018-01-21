@@ -1,6 +1,7 @@
 
 * Description
-This layer adds support for the [[https://proofgeneral.github.io/][Proof General]] interface to the [[https://coq.inria.fr/][Coq Proof Assistant]].
+This layer adds support for the [[https://proofgeneral.github.io/][Proof General]]
+interface to the [[https://coq.inria.fr/][Coq Proof Assistant]].
 
 ** Features
 - Loads the [[https://github.com/cpitclaudel/company-coq][company-coq]] extension
@@ -16,6 +17,27 @@ in your =~/.spacemacs= file.
 ** Dependencies
 - Coq (of course)
 - Proof general
+
+** Troubleshooting
+
+Specify the path to Proof General by modifying the
+=config.el= file shipped as part of this layer if
+you see this error:
+
+#+BEGIN_SRC
+  File error: Cannot open load file,
+  No such file or directory,
+  /usr/local/share/emacs/site-lisp/proof-general/generic/proof-site
+#+END_SRC
+
+In case you experience unwanted auto-completion
+when leaving Evil insert mode, put this line into
+your =dotspacemacs/user-init=:
+
+#+BEGIN_SRC emacs-lisp
+(setq evil-want-abbrev-expand-on-insert-exit nil)
+#+END_SRC
+
 
 * Keybindings
 
